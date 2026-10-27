@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Member Registration</h1>
+
+        <form id="memberForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error"></small>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <small class="error"></small>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="IT">Information Technology</option>
+                <option value="CS">Computer Science</option>
+                <option value="Business">Business</option>
+            </select>
+            <small class="error"></small>
+
+            <label for="message">Address:</label>
+            <textarea id="message" name="message" required></textarea>
+            <small class="error"></small>
+
+            <button type="submit">Register Member</button>
+        </form>
+
+        <p id="success-message"></p>
+
+        <h2>Registered Members</h2>
+        <ul id="member-list"></ul>
+
+        <p>Total Members: <span id="member-counter">0</span></p>
+
+        <button type="button" id="dark-mode">Dark Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

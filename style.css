@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.error {
+    color: red;
+    display: block;
+    font-size: 14px;
+}
+
+#success-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+#member-list li {
+    margin: 10px 0;
+    padding: 12px;
+    background: white;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#member-list button {
+    margin-left: 10px;
+    background: #dc3545;
+}
+
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode form,
+.dark-mode #member-list li {
+    background: #333;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+    background: #444;
+    color: white;
+    border: 1px solid #777;
+}
+
+.dark-mode #success-message {
+    color: lightgreen;
+}
